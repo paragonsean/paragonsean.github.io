@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Epsilon 3 Teleporter</title>
+    <style>
+        /* Center the container */
+        .img-zoom-container {
+            position: relative;
+            width: 600px;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        /* Lens styling */
+        .img-zoom-lens {
+            position: absolute;
+            border: 1px solid #d4d4d4;
+            width: 96px;
+            height: 96px;
+        }
+
+        /* Result window styling */
+        .img-zoom-result {
+            border: 1px solid #d4d4d4;
+            width: 360px;
+            height: 360px;
+            margin: 20px auto;
+            background-repeat: no-repeat;
+        }
+
+        /* Styling for text below the image */
+        .zoom-text {
+            text-align: center;
+            margin-top: 20px;
+            font-size: 1.2em;
+            color: #333;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        /* Styling for the section header */
+        .zoom-header {
+            text-align: center;
+            font-size: 2em;
+            color: #333;
+            margin-bottom: 10px;
+        }
+
+        /* Additional styles for story items */
+        .story-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .story-item {
+            width: 45%;
+            margin: 20px;
+            box-sizing: border-box;
+        }
+
+        .story-item img {
+            width: 100%;
+            height: auto;
+        }
+
+        .rounded-image {
+            border-radius: 10px;
+        }
+
+        /* General styles */
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        h2 {
+            text-align: center;
+            margin-top: 40px;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 40px;
+            padding: 20px;
+            background-color: #f1f1f1;
+        }
+
+        /* Styling for the header */
+        header {
+            background-color: #333;
+            padding: 10px 0;
+            text-align: center;
+        }
+
+        header nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 1.2em;
+        }
+
+        header nav a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header with navigation links -->
+    <header>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+
+    <div id="container">
+        <main>
+            <section id="story" class="story-section">
+                <h2>Why Choose the Epsilon 3 Teleporter?</h2>
+                <div class="story-container">
+                    <!-- First story-item -->
+                    <div class="story-item">
+                        <img src="images/geaniegrants8wishes.webp" alt="Epsilon 3 Teleporter" class="rounded-image">
+                        <h3>Revolutionize Your Travel Experience</h3>
+                        <p>The Epsilon 3 Teleporter is not just a device – it's a revolution in how you experience travel. Forget about the mundane hassles of commuting and embrace the future of teleportation. Our cutting-edge quantum technology ensures secure, fast, and seamless travel between pre-set destinations, giving you freedom like never before.</p>
+                    </div>
+
+                    <!-- Second story-item -->
+                    <div class="story-item">
+                        <img src="images/touchdown.webp" alt="Instant Travel" class="rounded-image">
+                        <h3>Instantaneous Journeys</h3>
+                        <p>Imagine stepping into a teleporter and arriving at your destination instantly, whether it's across town or on the other side of the world. The Epsilon 3 makes this possible, with customizable travel routes that adapt to your personal needs.</p>
+                        <p>Whether you're heading to work, a meeting, or a vacation spot, Epsilon 3 is designed for ultimate convenience. You'll never have to deal with delays or missed appointments again, as real-time tracking and even mind-controlled notifications keep you fully informed of your journey.</p>
+                    </div>
+
+                    <!-- Third story-item -->
+                    <div class="story-item">
+                        <img src="images/safety.webp" alt="Safety and Reliability" class="rounded-image">
+                        <h3>Safety and Ease-of-Use</h3>
+                        <p>Safety and ease-of-use are at the core of our design, ensuring that your teleportation experience is smooth and reliable every time. The Ultra model even offers long-distance travel, allowing you to explore far-off locations with comfort and style.</p>
+                        <p>From the moment you step into the teleporter, you can trust that Epsilon 3 will deliver you safely to your chosen destination.</p>
+                    </div>
+
+                    <!-- Fourth story-item -->
+                    <div class="story-item">
+                        <img src="images/BlackHole.webp" alt="Omega Wire" class="rounded-image">
+                        <h3>Power Beyond Imagination</h3>
+                        <p>With our revolutionary 1-e14 AWG Mega Wire, you'll have the ultimate power solution for your wildest energy demands! Whether it's powering a black hole generator or a galactic-sized arc reactor, the Omega Wire ensures you’re equipped for even the most intense energy challenges.</p>
+                        <p>Constructed from an exotic alloy of unobtainium and dark matter, it’s a technological marvel. This wire can handle temperatures hotter than the sun itself (while staying as cool as F14).</p>
+                        <p>With the Omega Wire, your neighbor’s Tesla charger can't save the environment half as fast as ours. Let your city know you care, and do it in a big way with a lot of noise!</p>
+                    </div>
+                </div>
+
+                <!-- Image Zoom Section -->
+                <h2 class="zoom-header">Experience Quantum Travel</h2>
+
+                <div class="img-zoom-container">
+                    <!-- Background Image with Zoom -->
+                    <img id="background-image" src="images/background.webp" width="600" height="400" alt="Background">
+                    <div id="zoom-lens" class="img-zoom-lens"></div>
+                </div>
+                
+                <div id="zoom-result" class="img-zoom-result"></div>
+    
+                <!-- Text Below the Image -->
+                <p class="zoom-text">
+                    With over 50 quantum leap tunnels across the US, the default version provides unmatched accessibility. Upgrade to the Pro version, and you can even install a tunnel in your own garage for instant home-to-work teleportation. No more stressful commutes or wasted hours stuck in traffic—just efficient, eco-friendly travel at the speed of light.
+                </p>
+            </section>
+        </main>
+
+        <!-- Footer -->
+        <footer>
+            <p>&copy; 2024 Epsilon 3 Teleporter. All rights reserved.</p>
+        </footer>
+    </div>
+
+    <!-- JavaScript for Image Zoom -->
+    <script>
+        function imageZoom(imgID, resultID) {
+            var img, lens, result, cx, cy;
+            img = document.getElementById(imgID);
+            result = document.getElementById(resultID);
+
+            /* Create lens: */
+            lens = document.getElementById('zoom-lens');
+
+            /* Calculate the ratio between result DIV and lens: */
+            cx = result.offsetWidth / lens.offsetWidth;
+            cy = result.offsetHeight / lens.offsetHeight;
+
+            /* Set background properties for the result DIV */
+            result.style.backgroundImage = "url('" + img.src + "')";
+            result.style.backgroundSize = (img.width * cx) + "px " + (img.height * cy) + "px";
+
+            /* Execute a function when someone moves the cursor over the image or the lens: */
+            lens.addEventListener("mousemove", moveLens);
+            img.addEventListener("mousemove", moveLens);
+
+            /* Also consider touch events for mobile: */
+            lens.addEventListener("touchmove", moveLens);
+            img.addEventListener("touchmove", moveLens);
+
+            function moveLens(e) {
+                var pos, x, y;
+                /* Prevent any other actions that may occur when moving over the image: */
+                e.preventDefault();
+                /* Get the cursor's x and y positions: */
+                pos = getCursorPos(e);
+                /* Calculate the position of the lens: */
+                x = pos.x - (lens.offsetWidth / 2);
+                y = pos.y - (lens.offsetHeight / 2);
+
+                /* Prevent the lens from being positioned outside the image: */
+                if (x > img.width - lens.offsetWidth) { x = img.width - lens.offsetWidth; }
+                if (x < 0) { x = 0; }
+                if (y > img.height - lens.offsetHeight) { y = img.height - lens.offsetHeight; }
+                if (y < 0) { y = 0; }
+
+                /* Set the position of the lens: */
+                lens.style.left = x + "px";
+                lens.style.top = y + "px";
+
+                /* Display what the lens "sees": */
+                result.style.backgroundPosition = "-" + (x * cx) + "px -" + (y * cy) + "px";
+            }
+
+            function getCursorPos(e) {
+                var a, x = 0, y = 0;
+                e = e || window.event;
+                /* Get the x and y positions of the image: */
+                a = img.getBoundingClientRect();
+                /* Calculate the cursor's x and y coordinates, relative to the image: */
+                x = e.pageX - a.left;
+                y = e.pageY - a.top;
+                /* Consider any page scrolling: */
+                x = x - window.pageXOffset;
+                y = y - window.pageYOffset;
+                return { x: x, y: y };
+            }
+        }
+
+        /* Initialize the image zoom on window load */
+        window.onload = function () {
+            imageZoom("background-image", "zoom-result");
+        };
+    </script>
+</body>
+</html>

@@ -1,0 +1,102 @@
+/* Flexbox layout for the story container */
+.story-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px; /* Add space between the items */
+}
+
+/* Story items should take up 45% of the container width */
+.story-item {
+    flex: 1 1 45%; /* Allow items to shrink and grow */
+    box-sizing: border-box;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+/* Ensure the images inside the story item are responsive */
+.story-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+/* Align text in story items */
+.story-item h3 {
+    margin-top: 10px;
+    font-size: 1.5em;
+}
+
+.story-item p {
+    margin-top: 10px;
+    font-size: 1.1em;
+}
+
+/* General page styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+h2 {
+    text-align: center;
+    margin-top: 40px;
+}
+
+/* Footer styling */
+footer {
+    text-align: center;
+    margin-top: 40px;
+    padding: 20px;
+    background-color: #f1f1f1;
+}
+
+/* Zoom container and lens */
+.img-zoom-container {
+    position: relative;
+    width: 600px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.img-zoom-lens {
+    position: absolute;
+    border: 2px solid #d4d4d4;
+    width: 100px;
+    height: 100px;
+    opacity: 0.5; /* Semi-transparent lens */
+    visibility: hidden; /* Hidden until hover */
+    background: rgba(255, 255, 255, 0.3); /* Add a slight background to lens */
+}
+
+/* Result window for zoom */
+.img-zoom-result {
+    border: 1px solid #d4d4d4;
+    width: 300px;
+    height: 300px;
+    margin: 20px auto;
+    background-repeat: no-repeat;
+    display: none; /* Initially hidden */
+}
+
+/* Styling for text below the image */
+.zoom-text {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 1.2em;
+    color: #333;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Styling for the section header */
+.zoom-header {
+    text-align: center;
+    font-size: 2em;
+    color: #333;
+    margin-bottom: 10px;
+}

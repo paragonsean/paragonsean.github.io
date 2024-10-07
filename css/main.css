@@ -1,0 +1,132 @@
+/* General Body Styles */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Verdana, sans-serif;
+    background-color: #336699;
+    box-sizing: border-box;
+    padding-left: 5vw;
+    padding-right: 5vw;
+}
+
+/* Container for the page content */
+.container {
+    width: 90vw;
+    background-color: white;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+/* Section Background Styling */
+.background-container {
+    background-color: #3c65c5;
+    padding: 60px 0;
+    width: 100%;
+}
+
+/* Story and Why Container */
+.story-container, .why-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.story-item, .why-item {
+    width: 30%;
+    text-align: center;
+    background-color: white;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.rounded-image {
+    width: 100%;
+    height: auto;
+    border-radius: 15px;
+    margin-bottom: 15px;
+}
+
+/* Table Styling */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+
+table, th, td {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: left;
+}
+
+th {
+    background-color: #003366;
+    color: white;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #f4f4f4;
+}
+
+/* Form Styling */
+form {
+    max-width: 600px;
+    margin: 20px auto;
+}
+
+form input, form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+}
+
+form button {
+    padding: 10px 20px;
+    background-color: #003366;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #0055cc;
+}
+
+/* Slideshow */
+.mySlides {
+    display: none;
+}
+
+.slideshow-container {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+}
+
+/* Zoom Image */
+.img-zoom-container {
+    position: relative;
+    width: 500px;
+    margin: 0 auto;
+}
+
+.img-zoom-lens {
+    position: absolute;
+    border: 1px solid #d4d4d4;
+    width: 96px;
+    height: 96px;
+}
+
+.img-zoom-result {
+    border: 1px solid #d4d4d4;
+    width: 360px;
+    height: 360px;
+    margin: 20px auto;
+}
